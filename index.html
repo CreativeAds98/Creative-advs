@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Creative Advs — E-Commerce Agency, Coimbatore</title>
 
+
+  <link rel="icon" href="assets/logo.png" type="image/x-icon">
+
   <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css" />
   <meta name="theme-color" content="#0b0b0b"/>
 </head>
@@ -32,9 +35,11 @@
         <a href="#contact" class="btn-outline">Get a Quote</a>
       </nav>
 
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     </div>
   </header>
 
@@ -120,15 +125,15 @@
       <h2 class="section-title">Featured Projects</h2>
       <div class="projects-row">
         <a class="project-card" href="#">
-          <img src="assets/project.png" alt="Project 1">
-          <div class="project-info"><strong>La Maison</strong><span>E-Commerce</span></div>
+          <img src="assets/ecomerce2.jpg" alt="Project 1">
+          <div class="project-info"><strong></strong><span>E-Commerce</span></div>
         </a>
         <a class="project-card" href="#">
-          <img src="assets/project.png" alt="Project 2">
-          <div class="project-info"><strong>Urban Roots</strong><span>Brand & Store</span></div>
+          <img src="assets/responsive.jpeg" alt="Project 2">
+          <div class="project-info"><strong>Responsive</strong><span>Websites</span></div>
         </a>
         <a class="project-card" href="#">
-          <img src="assets/project.png" alt="Project 3">
+          <img src="assets/performance.jpg" alt="Project 3">
           <div class="project-info"><strong>Glow Studio</strong><span>Photography</span></div>
         </a>
       </div>
@@ -150,7 +155,7 @@
       </div>
     </section>
 
-  <!-- ========== OUR TEAM (Pillar Style) ========== -->
+  <!-- ========== OUR CORE TEAM (Pillar Style) ========== -->
 <section id="team" class="team container">
   <h2 class="section-title">Our Team</h2>
   <p class="section-sub">Each one a unique pillar of Creative Advs.</p>
@@ -179,7 +184,7 @@
         <p>Web Developer</p>
       </div>
     </article>
-
+<!--
     <article class="team-member">
       <img src="assets/team/vignesh.jpg" alt="Vignesh">
       <div class="team-overlay">
@@ -187,22 +192,22 @@
         <p>Graphic Designer</p>
       </div>
     </article>
-
+  -->
     <article class="team-member">
-      <img src="assets/team/nandhini.jpg" alt="Nandini">
+      <img src="assets/team/sreenidhi.jpeg " alt="Nandini">
       <div class="team-overlay">
-        <h3>Nandini</h3>
+        <h3>Srinidhi</h3>
         <p>E-Commerce Strategist</p>
       </div>
     </article>
-
+<!--
     <article class="team-member">
       <img src="assets/team/nitheesh.jpg" alt="Nithesh">
       <div class="team-overlay">
         <h3>Nithesh</h3>
         <p>Video Editor</p>
       </div>
-    </article>
+    </article>-->
   </div>
 </section>
 
@@ -221,44 +226,60 @@
           </ul>
 
           <div class="social">
-            <a href="#" aria-label="LinkedIn" class="social-sq">in</a>
-            <a href="#" aria-label="Instagram" class="social-sq">ig</a>
-            <a href="#" aria-label="Facebook" class="social-sq">fb</a>
+            <a href="#" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/creativeadvs/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
           </div>
         </div>
+          <form 
+            class="contact-form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
 
-        <form class="contact-form" action="#" onsubmit="return false;">
-          <label>
-            <span>Name</span>
-            <input type="text" name="name" required>
-          </label>
+            <!-- Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="82ddfa77-cc30-4b61-8cb5-2e5a3ede8950">
 
-          <label>
-            <span>Email</span>
-            <input type="email" name="email" required>
-          </label>
+            <!-- Optional subject -->
+            <input type="hidden" name="subject" value="New Contact Form Submission">
 
-          <label>
-            <span>Company / Website</span>
-            <input type="text" name="company">
-          </label>
+            <!-- Optional sender name -->
+            <input type="hidden" name="from_name" value="Website Contact Form">
 
-          <label>
-            <span>Message</span>
-            <textarea name="message" rows="5" required></textarea>
-          </label>
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" required>
+            </label>
 
-          <div class="form-actions">
-            <button type="submit" class="btn-primary">Send Message</button>
-          </div>
-        </form>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" required>
+            </label>
+
+            <label>
+              <span>Company / Website</span>
+              <input type="text" name="company">
+            </label>
+
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">
+                Send Message
+              </button>
+            </div>
+
+          </form>
       </div>
     </section>
 
     <!-- ========== FOOTER ========== -->
     <footer class="site-footer">
       <div class="container footer-grid">
-        <div class="brand">
+        <div class="brand-footer">
           <img src="assets/logo.png" alt="Creative Advs logo" class="logo" />
           <div>Creative Advs</div>
         </div>
@@ -292,44 +313,26 @@
     </footer>
   </main>
 
-  <!-- ========== SCRIPTS ========== -->
-  <script>
-    // Set current year
-    document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Make sure video plays on mobile (most mobiles block autoplay unless muted)
-    (function ensureVideoPlays(){
-      const vid = document.getElementById('heroVideo');
-      if (!vid) return;
-      vid.muted = true;
-      const tryPlay = () => vid.play().catch(()=>{ /* ignore */ });
-      tryPlay();
-      document.addEventListener('click', tryPlay, { once: true, passive: true });
-    })();
-
-    // Mobile nav toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    navToggle.addEventListener('click', () => {
-      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
-      navToggle.setAttribute('aria-expanded', String(!expanded));
-      navLinks.classList.toggle('open');
-    });
-
-    // Simple fade-in with IntersectionObserver
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('in-view');
-          io.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.12 });
-
-    document.querySelectorAll('.section-title, .service, .project-card, .team-member, .testi').forEach(el => io.observe(el));
-  </script>
+  <button id="scrollTopBtn" aria-label="Scroll to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+    <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2"/>
+  </svg>
+</button>
 
 
+<a href="https://wa.me/917397645521" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Chat on WhatsApp">
+  
+  <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor">
+    <path d="M16 .396C7.163.396 0 7.56 0 16.396c0 2.89.754 5.705 2.187 8.188L0 32l7.64-2.144a15.93 15.93 0 0 0 8.36 2.244c8.837 0 16-7.164 16-16S24.837.396 16 .396zm0 29.29a13.2 13.2 0 0 1-6.7-1.827l-.48-.285-4.53 1.27 1.21-4.42-.312-.456a13.204 13.204 0 1 1 10.812 5.718zm7.28-9.885c-.398-.199-2.35-1.158-2.715-1.29-.365-.133-.63-.199-.896.199s-1.03 1.29-1.262 1.555c-.232.266-.465.299-.864.1-.398-.199-1.683-.62-3.204-1.975-1.184-1.057-1.984-2.363-2.216-2.762-.232-.398-.025-.613.174-.812.18-.18.398-.465.597-.697.199-.232.265-.398.398-.663.133-.266.066-.498-.033-.697-.1-.199-.896-2.16-1.228-2.958-.324-.78-.654-.673-.896-.685l-.763-.013c-.266 0-.697.1-1.063.498-.365.398-1.395 1.364-1.395 3.324 0 1.96 1.428 3.852 1.627 4.118.199.266 2.81 4.292 6.808 6.018.952.411 1.694.656 2.272.84.955.303 1.825.26 2.513.158.767-.114 2.35-.96 2.682-1.887.332-.927.332-1.722.232-1.887-.1-.166-.365-.266-.763-.465z"/>
+  </svg>
+
+</a>
+
+<script src="script.js"></script>
 
 </body>
 </html>
