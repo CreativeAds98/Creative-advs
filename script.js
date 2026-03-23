@@ -57,13 +57,3 @@ scrollBtn.addEventListener("click", () => {
 });
 
 
-
-// Preloader logic
-
-window.addEventListener("load", () => {
-  const preloader = document.getElementById("preloader");
-
-  setTimeout(() => {
-    preloader.classList.add("hide");
-  }, 2500);
-});
