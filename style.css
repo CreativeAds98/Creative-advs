@@ -69,7 +69,7 @@ body {
   background:linear-gradient(135deg,var(--accent),#00d17a);
   color:#000;border-radius:8px;font-weight:700;
 }
-.brand-text{font-weight:600;letter-spacing:0.2px;color: rgb(156, 235, 11);}
+.brand-text{font-weight:950;letter-spacing:0.2px;color: rgb(156, 235, 11);}
 
 .nav-links{display:flex;gap:20px;align-items:center}
 .nav-links a{color:var(--white);text-decoration:none;font-weight:500;opacity:0.95}
