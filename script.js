@@ -22,6 +22,14 @@
         navToggle.classList.toggle('active');
         });
 
+        // Close nav when a menu link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+          link.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+            navToggle.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
+          });
+        });
 
     // Simple fade-in with IntersectionObserver
     const io = new IntersectionObserver((entries) => {
